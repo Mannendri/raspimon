@@ -2,6 +2,7 @@ from sense_hat import SenseHat
 from time import sleep
 
 sense = SenseHat()
+sense.low_light = True
 
 #colors
 r = (255, 0, 0) #red

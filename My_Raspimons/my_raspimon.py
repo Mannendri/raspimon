@@ -77,3 +77,13 @@ if __name__ == '__main__':
 
 
     #add a while loop to keep your Raspimon running...
+    while True:
+        #dance forever!
+        for i in range(5):
+            sense.flip_h()
+            sleep(.5)
+            sense.flip_h()
+            sleep(.5)
+            sense.set_pixels(hands_up)
+            sleep(.5)
+            sense.set_pixels(open_eyes)

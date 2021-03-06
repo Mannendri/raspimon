@@ -2,6 +2,7 @@ from sense_hat import SenseHat
 from time import sleep
 
 sense = SenseHat()
+sense.low_light = True
 
 #makeover time! Here is a Python list. It holds  collection of string values.
 
