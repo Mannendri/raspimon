@@ -48,6 +48,16 @@ codey = [c, w, c, c, c, c, w, c,
          g, g, g, d, d, g, g, g
 ]       
 
+pikachu = [
+    w, k, k, w, w, w, w, k,
+    w, w, y, o, w, w, w, o,
+    w, w, w, y, y, y, y, o,
+    o, o, w, y, k, y, y, k,
+    o, o, w, r, y, y, y, o,
+    w, o, w, y, o, o, o, w,
+    w, o, y, o, y, o, y, w,
+    w, w, y, o, o, o, o, w
+    ]
 
 raspee =[k, w, w, d, d, d, k, k,
          w, w, w, d, d, d, k, k,
@@ -89,8 +99,8 @@ def most_common_color(raspimon):
     return top_color
 
 
-raspimons = [ raspee, chirp, frankie, codey, wubby, sullie, volt]
-names = ['raspee', 'chirp', 'frankie', 'codey', 'wubby', 'sullie', 'volt']
+raspimons = [ raspee, chirp, frankie, codey, pikachu, wubby, sullie, volt]
+names = ['raspee', 'chirp', 'frankie', 'codey', 'pikachu','wubby', 'sullie', 'volt']
 while True:
     for name, raspimon in zip(names, raspimons):
         sense.show_message(name, text_colour=most_common_color(raspimon), scroll_speed=0.08)

@@ -39,12 +39,57 @@ r, r, r, r, p, p, p, p,
 k, k, k, k, k, k, k, k 
 ]
 
+hands_up = [
+d, k, d, d, d, d, k, d,
+d, d, d, w, d, w, d, d,
+p, d, d, k, d, k, d, p,
+k, d, r, d, d, d, r, k,
+k, p, d, d, k, d, d, k,
+k, r, r, d, d, d, p, k,
+r, r, r, r, p, p, p, p,
+k, k, k, k, k, k, k, k 
+]
+
+tongue_out = [
+k, k, d, d, d, d, k, k,
+k, d, d, w, d, w, d, k,
+d, d, d, k, d, k, d, d,
+d, d, r, d, d, d, r, d,
+p, p, d, d, r, d, d, p,
+k, r, r, d, d, d, p, k,
+r, r, r, r, p, p, p, p,
+k, k, k, k, k, k, k, k 
+]
 sense.set_pixels(open_eyes)
 
 #Create animation below
-
-
-
+sleep(.5)
+sense.flip_h()
+sleep(.5)
+sense.flip_h()
+sleep(.5)
+sense.flip_h()
+sleep(1)
+sense.flip_v()
+sleep(.5)
+sense.flip_v()
+sleep(.5)
+sense.set_pixels(open_eyes)
+sleep(.9)
+sense.set_pixels(closed_eyes)
+sleep(.2)
+sense.set_pixels(open_eyes)
+sleep(.9)
+sleep(.9)
+sense.set_pixels(closed_eyes)
+sleep(.2)
+sense.set_pixels(open_eyes)
+sleep(.9)
+sense.set_pixels(hands_up)
+sleep(1)
+sense.set_pixels(tongue_out)
+sleep(.5)
+sense.set_pixels(open_eyes)
 
 
 print('Done')
